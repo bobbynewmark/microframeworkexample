@@ -35,5 +35,7 @@ class Namer(object):
 
 if __name__ == "__main__":
     logger = Namer(["Name.get"])
-    logger.start()
-    logger.close()
+    try:
+        logger.start()
+    finally:
+        logger.close()

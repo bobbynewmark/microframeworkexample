@@ -1,7 +1,7 @@
 import cherrypy, os, pika, json, time, uuid, random
 
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
-notes_dir = os.path.join(_curdir, '../')
+notes_dir = os.path.join(_curdir, 'static')
 notes_file = os.path.join(notes_dir, "notes.html")
 notes_css = os.path.join(notes_dir, "notes.css")
 notes_jquery = os.path.join(notes_dir, "jquery-1.10.1.js")

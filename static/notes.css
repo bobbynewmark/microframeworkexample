@@ -1,0 +1,12 @@
+body {
+    font-family:Century Gothic;
+    font-size:30px;
+}
+
+.outline-2 {
+    height:500px;
+    margin:100px auto;
+    width:600px;
+    border: 1px dashed blue;
+    padding:50px;
+}

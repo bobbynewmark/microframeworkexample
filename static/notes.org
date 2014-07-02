@@ -1,0 +1,60 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: num:0
+#+TITLE: 
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="notes.css" /> 
+#+HTML_HEAD: <script src="jquery.js"></script>
+#+HTML_HEAD: <script>var a = $(".outline-2").first(); 
+#+HTML_HEAD: function next () { a = a.next(); if (!a.length) {start();return}  $("html,body").animate({scrollTop : a.offset().top-100}, 'slow'); } 
+#+HTML_HEAD: function start () { a = $(".outline-2").first(); $("html,body").animate({scrollTop : a.offset().top-100}, 'slow'); } 
+#+HTML_HEAD: $(function() { start(); $("body").keypress(function() { next(); });  });
+#+HTML_HEAD: </script>
+
+* Hi
+
+Andrew Cox
+
+@vipox
+
+andrew.cox@end-game.com
+
+* What
+
+- Lots of little services 
+- Chattering on a bus
+- Each doing one thing 
+
+* Why
+
++ Each service is seperated
++ Need more grunt spin up more services
++ Need to change spin up new service and then kill old one
++ No need to decide on a technology / language upfront 
+
+* Why Not
+
++ Dev Ops Nightmare
++ You Arent Going To Need It
++ Tooling may not really be there yet 
+
+* How 
+
+Shared interface
+
++ Yeah for JSON
++ Everything is talking and listening on shared understanding of topics
+
+* In my Example
+
++ RabbitMQ 
+  + A easy to set up and good queue system
++ MongoDB
+  + A non-relational data store
++ Python
+  + CherryPy (for the web site)
+  + Pika (to talk to RabbitMQ)
+  + PyMongo (to talk to Mongo)
+
+* Code
+
++ Lets see it
+
